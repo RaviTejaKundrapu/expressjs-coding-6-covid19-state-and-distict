@@ -2,6 +2,7 @@ const express = require('express')
 
 const app = express()
 module.exports = app
+module.exports = app
 app.use(express.json())
 
 const {open} = require('sqlite')
@@ -82,6 +83,7 @@ app.post('/districts/', async (request, response) => {
 
 const convertApi4KeysCases = eachdistrict => {
   return {
+    districtId: eachdistrict.district_id,
     districtName: eachdistrict.district_name,
     stateId: eachdistrict.state_id,
     cases: eachdistrict.cases,
