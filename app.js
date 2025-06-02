@@ -148,6 +148,8 @@ app.get('/states/:stateId/stats/', async (request, response) => {
   })
 })
 
+//Api 8
+
 app.get('/districts/:districtId/details/', async (request, response) => {
   const {districtId} = request.params
   const getStateNameQuery = `SELECT state.state_name as stateName
