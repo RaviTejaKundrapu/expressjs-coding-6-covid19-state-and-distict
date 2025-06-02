@@ -128,7 +128,7 @@ deaths=${deaths}`
   response.send('District Details Updated')
 })
 
-//API 7
+//API 7 _ you can also simply write as alias in sql query
 
 app.get('/states/:stateId/stats/', async (request, response) => {
   const {stateId} = request.params
